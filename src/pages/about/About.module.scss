@@ -1,0 +1,101 @@
+.aboutSection,
+.curiositiesSection {
+  min-height: 90vh;
+}
+
+.aboutSection {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: var(--light-text);
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+      font-size: 2rem;
+
+      span {
+        color: var(--primary);
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    button {
+      color: var(--light-text);
+      background-color: transparent;
+      font-weight: 500;
+      max-width: 300px;
+      border: 1px solid white;
+      padding: 0.7rem 0;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      transition: 0.2s;
+      margin-top: 20px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--primary);
+        color: var(--background-dark);
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.line {
+  width: 100%;
+  height: 0.1px;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.288);
+  box-shadow: 10px 12px 6px -15px rgb(255, 255, 255);
+}
+
+.curiositiesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  color: var(--light-text);
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  .curiosity {
+    max-width: 1000px;
+    text-align: justify;
+    margin-top: 50px;
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .aboutSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+    article {
+      text-align: center;
+    }
+
+    img {
+      width: 90%;
+    }
+  }
+}
