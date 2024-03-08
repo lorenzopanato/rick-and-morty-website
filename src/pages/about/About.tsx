@@ -1,7 +1,7 @@
 import PortalImage from "../../assets/portal.png";
 import style from "./About.module.scss";
 import curiositiesData from "../../utils/data/curiosities.json";
-import { CuriosityData } from "../../utils/interfaces/Curiosity";
+import { CuriosityData } from "../../utils/interfaces/interfaces";
 
 export default function About() {
   const curiosities: CuriosityData[] = curiositiesData;
