@@ -1,3 +1,15 @@
+export interface ApiCharacterData {
+  info: PaginationInfo;
+  results: CharacterData[];
+}
+
+interface PaginationInfo {
+  count: number;
+  pages: number;
+  next: string;
+  prev: string;
+}
+
 export interface CharacterData {
   id: number;
   name: string;

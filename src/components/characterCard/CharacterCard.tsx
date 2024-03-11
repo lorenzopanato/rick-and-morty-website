@@ -3,10 +3,6 @@ import { CharacterData } from "../../utils/interfaces/interfaces";
 import style from "./CharacterCard.module.scss";
 
 export default function CharacterCard({ character }: { character: CharacterData }) {
-  useEffect(() => {
-    console.log(character)
-  }, [])
-
   return (
     <div className={style.card}>
       <img
