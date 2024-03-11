@@ -2,9 +2,11 @@ import PortalImage from "../../assets/portal.png";
 import style from "./About.module.scss";
 import curiositiesData from "../../utils/data/curiosities.json";
 import { CuriosityData } from "../../utils/interfaces/interfaces";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
   const curiosities: CuriosityData[] = curiositiesData;
+  const navigate = useNavigate();
 
   return (
     <main>
@@ -31,7 +33,7 @@ export default function About() {
             interessantes sobre a vida, Rick & Morty arranca gargalhadas e ainda
             rende ótimas discussões filosóficas.
           </p>
-          <button>Conheça os personagens</button>
+          <button onClick={() => navigate("/characters")}>Conheça os personagens</button>
         </article>
       </section>
 

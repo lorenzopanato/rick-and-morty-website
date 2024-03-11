@@ -1,15 +1,14 @@
-import { createContext, useEffect, useState } from "react";
-import {
-  ApiCharacterData,
-  IChildren,
-} from "../utils/interfaces/interfaces";
+import { createContext, useState } from "react";
+import { ApiCharacterData, IChildren } from "../utils/interfaces/interfaces";
 import axios from "axios";
 import { apiBaseUrl } from "../utils/api";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import { enqueueSnackbar } from "notistack";
 
 interface CharactersType {
   charactersData: ApiCharacterData;
-  getAllCharacters: (page: number) => Promise<void>;
+  getAllCharacters: () => Promise<void>;
+  getCharacterByName: (name: string) => Promise<void>;
 }
 
 export const CharactersContext = createContext({} as CharactersType);
@@ -24,14 +23,17 @@ export function CharactersProvider({ children }: IChildren) {
     },
     results: [],
   });
-  
+
   const navigate = useNavigate();
   const [searchParam] = useSearchParams();
   let page = Number(searchParam.get("page")) || 1;
+  let name = searchParam.get("name") || "";
 
   const getAllCharacters = async () => {
     try {
-      const response = await axios.get(`${apiBaseUrl}/character/?page=${page}`);
+      const response = await axios.get(
+        `${apiBaseUrl}/character/?page=${page}&name=${name}`
+      );
       const data = response.data;
 
       setCharactersData(data);
@@ -40,11 +42,25 @@ export function CharactersProvider({ children }: IChildren) {
     }
   };
 
+  const getCharacterByName = async (name: string) => {
+    try {
+      const response = await axios.get(`${apiBaseUrl}/character/?name=${name}`);
+      const data = response.data;
+
+      setCharactersData(data);
+      navigate(`/characters/?name=${name}`);
+    } catch (error) {
+      console.error("Erro ao buscar personagem:", error);
+      enqueueSnackbar("Personagem não encontrado.", { variant: "error" });
+    }
+  };
+
   return (
     <CharactersContext.Provider
       value={{
         charactersData,
         getAllCharacters,
+        getCharacterByName,
       }}
     >
       {children}
