@@ -100,7 +100,6 @@ export default function Header() {
         edge="start"
         onClick={handleDrawerToggle}
         sx={{
-          mr: 2,
           display: { sm: "none" },
           color: "var(--light-text)",
           padding: 0,

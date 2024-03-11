@@ -24,13 +24,14 @@
 
     p {
       font-size: 1.1rem;
+      max-width: 1000px;
     }
 
     button {
       color: var(--light-text);
       background-color: transparent;
       font-weight: 500;
-      max-width: 300px;
+      width: 300px;
       border: 1px solid white;
       padding: 0.7rem 0;
       border-radius: 4px;
@@ -91,11 +92,55 @@
     gap: 0;
 
     article {
-      text-align: center;
+      align-items: center;
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: justify;
+        font-size: 1rem;
+      }
+
+      button {
+        margin-bottom: 40px;
+        width: 270px;
+        font-size: 1rem;
+      }
     }
 
     img {
-      width: 90%;
+      max-width: 680px;
+      width: 100%;
+    }
+  }
+
+  .curiositiesSection {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutSection {
+    article {
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .curiositiesSection {
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    .curiosity {
+      h3 {
+        font-size: 1.3rem;
+      }
     }
   }
 }
