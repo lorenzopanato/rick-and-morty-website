@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { CharacterData } from "../../utils/interfaces/interfaces";
 import style from "./CharacterCard.module.scss";
 

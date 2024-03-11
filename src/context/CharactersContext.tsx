@@ -51,7 +51,7 @@ export function CharactersProvider({ children }: IChildren) {
       navigate(`/characters/?name=${name}`);
     } catch (error) {
       console.error("Erro ao buscar personagem:", error);
-      enqueueSnackbar("Personagem não encontrado.", { variant: "error" });
+      enqueueSnackbar("Nenhum personagem encontrado.", { variant: "error" });
     }
   };
 

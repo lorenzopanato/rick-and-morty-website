@@ -18,7 +18,7 @@ export default function Characters() {
   }, [searchParam]);
 
   const handlePageChange = (
-    event: React.ChangeEvent<unknown>,
+    _: React.ChangeEvent<unknown>,
     page: number
   ) => {
     const name = searchParam.get("name") || "";
