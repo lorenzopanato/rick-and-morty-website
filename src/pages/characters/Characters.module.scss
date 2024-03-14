@@ -6,9 +6,11 @@
   padding-top: 30px;
   min-height: 83.5vh;
   max-width: 1440px;
+  width: 100%;
 
   img {
     max-width: 400px;
+    width: 95%;
   }
 
   .charactersHeader {
@@ -17,6 +19,7 @@
     align-items: center;
     width: 100%;
     max-width: 1080px;
+    gap: 40px;
     padding: 0 20px;
     margin-top: 50px;
 
@@ -30,6 +33,8 @@
       display: flex;
       gap: 10px;
       align-items: center;
+      width: 100%;
+      justify-content: end;
 
       > input {
         font-size: 1.05rem;
@@ -37,9 +42,10 @@
         border: 1px solid white;
         border-radius: 4px;
         background-color: transparent;
-        width: 300px;
         color: var(--light-text);
         flex: 1;
+        max-width: 402px;
+        min-width: 0px;
 
         &::placeholder {
           color: rgb(199, 199, 199);
@@ -88,14 +94,28 @@
   }
 }
 
-@media (max-width: "780px") {
-  .charactersHeader {
-    flex-direction: column;
-    gap: 20px;
+@media (max-width: 1080px) {
+  .charactersSection {
 
-    > div {
-      width: 100%;
-      max-width: 500px;
+    .cardsContainer {
+      gap: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 780px) {
+  .charactersSection {
+    gap: 0px;
+
+    .charactersHeader {
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 5%;
+
+      > div {
+        justify-content: center;
+      }
     }
   }
 }

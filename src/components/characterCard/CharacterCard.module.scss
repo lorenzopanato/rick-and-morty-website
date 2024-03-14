@@ -2,11 +2,12 @@
   display: flex;
   background-color: rgb(34, 12, 95);
   box-shadow: rgba(164, 150, 226, 0.219) 0px 2px 8px 0px;
-  width: 100%;
+  flex: 1;
+  min-width: 450px;
   max-width: 500px;
   border-radius: 12px;
   overflow: hidden;
-  max-height: 240px;
+  max-height: 260px;
   cursor: pointer;
 
   img {
@@ -19,7 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
+    padding: 2px 2px 2px 15px;
 
     h2 {
       color: var(--primary);
@@ -42,30 +43,20 @@
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 480px) {
   .card {
-    max-width: 500px;
+    flex-direction: column;
+    max-height: none;
+    max-width: 250px;
+    min-width: 250px;
 
     img {
-      max-width: 190px;
-      max-height: none;
+       width: 100%;
+       max-width: none;
     }
 
-    h2 {
-      font-size: 1.4rem;
-    }
-
-    strong {
-      font-size: 1rem !important;
-    }
-
-    .status,
-    .firstLocation {
-      margin-bottom: 10px !important;
-    }
-
-    p {
-      font-size: 0.95rem;
+    .characterInfo {
+      padding: 10px 5px 5px 15px;
     }
   }
 }
