@@ -23,7 +23,7 @@ export default function Home() {
             Entre no portal e <span>explore esse universo →</span>
           </h2>
           <p className={style.features}>
-            Curiosidades, personagens, imagens e muito mais!
+            Personagens, localizações, episódios e muito mais!
           </p>
         </article>
         <div className={style.portalContainer}>

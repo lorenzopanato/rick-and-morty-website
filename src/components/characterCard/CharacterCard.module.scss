@@ -8,7 +8,13 @@
   border-radius: 12px;
   overflow: hidden;
   max-height: 260px;
+  transition: 0.3s;
+  z-index: 100;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgb(49, 23, 122);
+  }
 
   img {
     max-width: 190px;
@@ -41,6 +47,22 @@
       font-size: 0.95rem;
     }
   }
+
+  .infoContainer {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+    padding: 12px 10px 0 0;
+    color: var(--light-text);
+
+    .info {
+      transition: 0.2s;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -51,8 +73,8 @@
     min-width: 250px;
 
     img {
-       width: 100%;
-       max-width: none;
+      width: 100%;
+      max-width: none;
     }
 
     .characterInfo {

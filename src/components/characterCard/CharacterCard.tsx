@@ -1,7 +1,12 @@
 import { CharacterData } from "../../utils/interfaces/interfaces";
 import style from "./CharacterCard.module.scss";
+import { Info } from "@phosphor-icons/react";
 
-export default function CharacterCard({ character }: { character: CharacterData }) {
+export default function CharacterCard({
+  character,
+}: {
+  character: CharacterData;
+}) {
   return (
     <div className={style.card}>
       <img
@@ -22,6 +27,9 @@ export default function CharacterCard({ character }: { character: CharacterData 
           <strong>Ultima localização conhecida:</strong>
           <p>{character.location.name}</p>
         </div>
+      </div>
+      <div className={style.infoContainer}>
+        <Info className={style.info} size={28} />
       </div>
     </div>
   );
