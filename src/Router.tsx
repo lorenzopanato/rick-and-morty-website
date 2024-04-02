@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 import { CharactersProvider } from "./context/CharactersContext";
 
 export default function Router() {
+
   return (
     <BrowserRouter>
       <div className="pageContainer">

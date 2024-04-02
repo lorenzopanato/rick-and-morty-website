@@ -52,7 +52,7 @@
     align-items: center;
 
     img {
-      max-width: 370px;
+      max-width: 340px;
       transition: 0.4s;
       cursor: pointer;
       animation: pulse 1.3s infinite alternate;
@@ -66,6 +66,16 @@
   }
   100% {
     transform: scale(1.03);
+  }
+}
+
+@media (max-width: 1350px) {
+  .homeSection {
+    .portalContainer {
+      img {
+        max-width: 300px;
+      }
+    }
   }
 }
 
