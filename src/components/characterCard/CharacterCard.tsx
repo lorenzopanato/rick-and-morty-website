@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { CharacterData } from "../../utils/interfaces/interfaces";
 import style from "./CharacterCard.module.scss";
 import { Info } from "@phosphor-icons/react";
@@ -7,8 +8,10 @@ export default function CharacterCard({
 }: {
   character: CharacterData;
 }) {
+  const navigate = useNavigate();
+
   return (
-    <div className={style.card}>
+    <div className={style.card} key={character.id} onClick={() => navigate(`/character-info/${character.id}`)}>
       <img
         src={character.image}
         alt={`imagem do personagem ${character.name}`}

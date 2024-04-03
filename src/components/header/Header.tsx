@@ -48,15 +48,7 @@ export default function Header() {
         >
           <MapPin size={30} className={style.icon} />
           <a style={{ fontSize: "1.1rem" }}>Localizações</a>
-        </div>
-        <div
-          className={style.navItem}
-          style={{ padding: "20px 0 5px 30px" }}
-          onClick={() => navigate("/")}
-        >
-          <MonitorPlay size={30} className={style.icon} />
-          <a style={{ fontSize: "1.1rem" }}>Episódios</a>
-        </div>
+        </div>  
       </List>
     </Box>
   );
@@ -86,10 +78,6 @@ export default function Header() {
           <div className={style.navItem} onClick={() => navigate("/")}>
             <MapPin size={28} className={style.icon} />
             <a>Localizações</a>
-          </div>
-          <div className={style.navItem} onClick={() => navigate("/")}>
-            <MonitorPlay size={28} className={style.icon} />
-            <a>Episódios</a>
           </div>
         </nav>
       </Box>

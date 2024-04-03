@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <SnackbarProvider maxSnack={3}>
-      <Particles options={particleOptions} init={customInit} />
+        <Particles options={particleOptions} init={customInit} />
         <Router />
       </SnackbarProvider>
     </>

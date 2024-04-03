@@ -3,10 +3,10 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Characters from "./pages/characters/Characters";
 import Locations from "./pages/locations/Locations";
-import Episodes from "./pages/episodes/Episodes";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import { CharactersProvider } from "./context/CharactersContext";
+import CharacterInfo from "./pages/characterInfo/CharacterInfo";
 
 export default function Router() {
 
@@ -19,8 +19,8 @@ export default function Router() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/characters" element={<Characters />} />
+            <Route path="/character-info/:id" element={<CharacterInfo />} />
             <Route path="/locations" element={<Locations />} />
-            <Route path="/episodes" element={<Episodes />} />
           </Routes>
           <Footer />
         </CharactersProvider>
