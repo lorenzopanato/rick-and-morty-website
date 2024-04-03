@@ -1,5 +1,7 @@
 <h1 align="center"> Rick and Morty Website </h1>
 
+Publicado em: [Link para o Vercel](https://rick-and-morty-website-red.vercel.app/)
+
 ![image](https://github.com/lorenzopanato/rick-and-morty-website/assets/132415449/bfdd01a0-590f-4bbf-b778-c742165a0a78)
 
 <h2>Explore a grande variedade de personagens de Rick and Morty!</h2>
@@ -12,7 +14,7 @@
 
 <h2>Conheça mais sobre um personagem específico e os episódios em que ele aparece!</h2>
 
-![image](https://github.com/lorenzopanato/rick-and-morty-website/assets/132415449/b8e69a6a-0309-4cd1-9fba-f3d599d599f6)
+![image](https://github.com/lorenzopanato/rick-and-morty-website/assets/132415449/526be9a2-b229-488e-be67-f1ae03d4d436)
 
 ## 🚀 Tecnologias
 
