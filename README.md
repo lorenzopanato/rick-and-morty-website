@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+<h1 align="center"> Rick and Morty Website </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/lorenzopanato/rick-and-morty-website/assets/132415449/bfdd01a0-590f-4bbf-b778-c742165a0a78)
 
-Currently, two official plugins are available:
+<h2>Explore a grande variedade de personagens de Rick and Morty!</h2>
+![image](https://github.com/lorenzopanato/rick-and-morty-website/assets/132415449/de4566e3-e6dd-4677-9f8f-c8ac5fd78e42)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>Procure por personagens específicos através da barra de pesquisa!</h2>
+![image](https://github.com/lorenzopanato/rick-and-morty-website/assets/132415449/d7749f7b-6f66-4f4d-b032-8e174db2c9e4)
 
-## Expanding the ESLint configuration
+<h2>Conheça mais sobre um personagem específico e os episódios em que ele aparece!</h2>
+![image](https://github.com/lorenzopanato/rick-and-morty-website/assets/132415449/b8e69a6a-0309-4cd1-9fba-f3d599d599f6)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Tecnologias
 
-- Configure the top-level `parserOptions` property like this:
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- React
+- TypeScript
+- ContextAPI
+- Scss
+- Vite
+- Material UI
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ⚙️ Instalação do Projeto
+
+Passo a passo:
+
+1. Clone o repositório principal.
+2. Execute o comando "npm install" para baixar as dependências.
+3. Execute o comando "npm run dev" para iniciar o projeto.
+
+
+
