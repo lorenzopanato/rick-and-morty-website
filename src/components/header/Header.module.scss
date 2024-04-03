@@ -47,18 +47,6 @@ header {
   }
 }
 
-@media (max-width: 750px) {
-  header {
-    nav {
-      .navItem {
-        .icon {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 600px) {
   header {
     justify-content: end;

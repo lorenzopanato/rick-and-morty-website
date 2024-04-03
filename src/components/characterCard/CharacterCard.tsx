@@ -11,7 +11,11 @@ export default function CharacterCard({
   const navigate = useNavigate();
 
   return (
-    <div className={style.card} key={character.id} onClick={() => navigate(`/character-info/${character.id}`)}>
+    <div
+      className={style.card}
+      key={character.id}
+      onClick={() => navigate(`/character-info/${character.id}`)}
+    >
       <img
         src={character.image}
         alt={`imagem do personagem ${character.name}`}
@@ -22,17 +26,19 @@ export default function CharacterCard({
         <p className={style.status}>
           {character.species} - {character.status}
         </p>
-        <div className={style.firstLocation}>
-          <strong>Visto pela primeira vez em:</strong>
+        <div className={style.origin}>
+          <strong>Origem:</strong>
           <p>{character.origin.name}</p>
         </div>
-        <div className={style.lastLocation}>
-          <strong>Ultima localização conhecida:</strong>
+        <div className={style.currentLocation}>
+          <strong>Localização atual:</strong>
           <p>{character.location.name}</p>
         </div>
       </div>
       <div className={style.infoContainer}>
-        <Info className={style.info} size={28} />
+        <span title="Mais informações">
+          <Info className={style.info} size={28} />
+        </span>
       </div>
     </div>
   );

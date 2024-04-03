@@ -34,7 +34,7 @@
     }
 
     .status,
-    .firstLocation {
+    .origin {
       margin-bottom: 10px;
     }
 
@@ -55,11 +55,15 @@
     padding: 12px 10px 0 0;
     color: var(--light-text);
 
-    .info {
-      transition: 0.2s;
+    span {
+      height: fit-content;
 
-      &:hover {
-        color: var(--primary);
+      .info {
+        transition: 0.2s;
+
+        &:hover {
+          color: var(--primary);
+        }
       }
     }
   }

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import style from "./Header.module.scss";
-import { House, Info, MapPin, MonitorPlay, User } from "@phosphor-icons/react";
+import { House, Info, User } from "@phosphor-icons/react";
 import { Drawer, IconButton } from "@mui/material";
 import { Box, List } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -40,15 +40,7 @@ export default function Header() {
         >
           <User size={30} className={style.icon} />
           <a style={{ fontSize: "1.1rem" }}>Personagens</a>
-        </div>
-        <div
-          className={style.navItem}
-          style={{ padding: "20px 0 5px 30px" }}
-          onClick={() => navigate("/")}
-        >
-          <MapPin size={30} className={style.icon} />
-          <a style={{ fontSize: "1.1rem" }}>Localizações</a>
-        </div>  
+        </div> 
       </List>
     </Box>
   );
@@ -74,10 +66,6 @@ export default function Header() {
           >
             <User size={28} className={style.icon} />
             <a>Personagens</a>
-          </div>
-          <div className={style.navItem} onClick={() => navigate("/")}>
-            <MapPin size={28} className={style.icon} />
-            <a>Localizações</a>
           </div>
         </nav>
       </Box>

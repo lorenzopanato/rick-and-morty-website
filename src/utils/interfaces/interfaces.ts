@@ -3,6 +3,11 @@ export interface ApiCharacterData {
   results: CharacterData[];
 }
 
+export interface ApiEpisodesData {
+  info: PaginationInfo;
+  results: EpisodeData[];
+}
+
 interface PaginationInfo {
   count: number;
   pages: number;
@@ -33,6 +38,16 @@ interface Origin {
 interface Location {
   name: string;
   url: string;
+}
+
+export interface EpisodeData {
+  id: number;
+  name: string;
+  air_date: string;
+  episode: string;
+  characters: CharacterData[];
+  url: string;
+  created: string;
 }
 
 export interface CuriosityData {
